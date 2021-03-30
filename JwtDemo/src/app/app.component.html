@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+  <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/">Home</a>
+      <a class="nav-item nav-link" (click)="logout()">Logout</a>
+  </div>
+</nav>
+
+<!-- main app container -->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- credits -->
+<div class="text-center mt-4">
+  <p>
+      <a target="_top">Has entrat accedint a una API en la qual tenies autorització</a>
+  </p>
+  <p>
+      <a target="_top">Demo JWT del Seminari 4</a>
+  </p>
+</div>
